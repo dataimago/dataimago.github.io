@@ -1,5 +1,8 @@
-<a href="https://dataimago.github.io"><img src="assets/img/dataimago_supreme_4.svg" align="center" hspace="10" vspace="6"></a>
+<div align="center">
+	<a href="https://dataimago.ai"><img src="assets/img/dataimago_supreme_4.svg" alt="ai" style="width: 95%"></a>
+</div>
 
 #
 
-_dataimago GitHub website_
+> [!NOTE]
+> _dataimago_ GitHub website

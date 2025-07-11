@@ -1,0 +1,42 @@
+<svg width="1280" height="640" viewBox="0 0 1280 640" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <style>
+        .futura {
+          font-family: 'Futura';
+          font-style: italic;
+          font-size: 250px;
+          font-weight: bold;
+        }
+        .data {
+          fill: white;
+        }
+        .a {
+          fill: black;
+        }
+        .imago {
+          fill: white;
+        }
+        .i {
+          fill: red;
+        }
+        .background {
+          fill: rgb(220, 220, 220);
+        }
+      </style>
+    </defs>
+  
+    <!-- Red Background -->
+    <rect class="background" width="100%" height="100%" rx="5" ry="5" stroke="rgb(180, 180, 180)" stroke-width="2"/>
+  
+    <!-- "Data" text -->
+    <text x="42" y="390" class="futura data">data</text>
+
+    <!-- "Imago" text  -->
+    <text x="512.3" y="390" class="futura imago">imago</text>
+
+    <!-- "i" text -->
+    <text x="512.3" y="390" class="futura i">i</text>
+
+    <!-- "a" text -->
+    <text x="426" y="390" class="futura a">a</text>
+  </svg>

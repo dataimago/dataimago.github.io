@@ -1,0 +1,250 @@
+<svg viewBox="0 0 800 400" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      
+      .futura {
+        font-family: 'Futura';
+        font-style: italic;
+        font-weight: bold;
+      }
+      .source-code-pro {
+        font-family: 'Source Code Pro', monospace;
+        font-weight: 400;
+      }
+      .data-scene-1, .imago-scene-1 {
+        fill: black;
+        font-size: 150px;
+        text-anchor: middle;
+        dominant-baseline: middle;
+      }
+      .a-scene-2, .i-scene-2 {
+        fill: black;
+        font-size: 150px;
+        text-anchor: middle;
+        dominant-baseline: middle;
+      }
+      .a-scene-2, .i-scene-2 {
+        fill: black;
+        font-size: 150px;
+        text-anchor: middle;
+        dominant-baseline: middle;
+      }
+      .data-plain, .imago-plain {
+        font-size: 150px;
+        fill: black;
+        text-anchor: middle;
+        dominant-baseline: middle;
+      }
+      .a-plain, .i-plain {
+        font-size: 150px;
+        fill: black;
+        text-anchor: middle;
+        dominant-baseline: middle;
+      }
+      .is-scene-3 {
+        font-family: 'Source Code Pro', monospace;
+        font-size: 25px;
+        fill: black;
+        text-anchor: middle;
+        dominant-baseline: middle;
+      }
+      .background {
+        fill: white;
+      }
+      .overlay-futura {
+        font-family: 'Futura';
+        font-style: italic;
+        font-size: 38px;
+        fill: rgb(100, 100, 100);
+        text-anchor: middle;
+      }
+    </style>
+
+    <!-- Inset shadow filter -->
+    <filter id="inset-shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2" result="blur" />
+      <feOffset in="blur" dx="-1" dy="-1" result="offset1" />
+      <feOffset in="blur" dx="1" dy="1" result="offset2" />
+      <feFlood flood-color="rgb(230, 230, 230)" flood-opacity="0.5" result="flood1" />
+      <feComposite in="flood1" in2="offset1" operator="in" result="shadow1" />
+      <feFlood flood-color="rgb(180, 180, 180)" flood-opacity="0.2" result="flood2" />
+      <feComposite in="flood2" in2="offset2" operator="in" result="shadow2" />
+      <feMerge>
+        <feMergeNode in="shadow1" />
+        <feMergeNode in="shadow2" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Circular path -->
+    <path id="circularPath"
+          d="M 395 111 m -90,0 a 90,90 0 1,1 180,0 a 90,90 0 1,1 -180,0"
+          fill="none" />
+  </defs>
+
+  <!-- Background -->
+  <rect class="background" width="100%" height="100%" />
+
+  <!-- Scene 1: dataimago from white to black -->
+  <text x="205" y="200" class="futura data-scene-1" opacity="0">data
+    <animate id="data-scene-1-fade-in"
+          attributeName="opacity"
+          values="0;1"
+          keyTimes="0;1"
+          dur="4s"
+          begin="0s"
+          fill="freeze" />
+    <set attributeName="opacity" to="1" begin="data-scene-1-fade-in.end" />
+    <animate id="data-scene-1-fade-out"
+          attributeName="opacity"
+          values="1;0"
+          keyTimes="0;1"
+          dur="4s"
+          begin="data-scene-1-fade-in.end+1s"
+          fill="freeze" />
+  </text>
+  <text x="542" y="200" class="futura imago-scene-1" opacity="0">imago
+    <animate id="imago-scene-1-fade-in"
+          attributeName="opacity"
+          values="0;1"
+          keyTimes="0;1"
+          dur="4s"
+          begin="0s"
+          fill="freeze" />
+    <set attributeName="opacity" to="1" begin="imago-scene-1-fade-in.end" />
+    <animate id="imago-scene-1-fade-out"
+          attributeName="opacity"
+          values="1;0"
+          keyTimes="0;1"
+          dur="4s"
+          begin="imago-scene-1-fade-in.end+1s"
+          fill="freeze" />
+  </text>
+
+  <!-- scene 2: a and i black -->
+  <text x="320" y="200" class="futura a-scene-2" opacity="0">a
+    <animate id="a-scene-2-fade-in"
+          attributeName="opacity"
+          values="0;1"
+          keyTimes="0;1"
+          dur="1s"
+          begin="data-scene-1-fade-out.begin+1s"
+          fill="freeze" />
+    <animate id="ai-scene-2-center"
+          attributeName="x"
+          values="320;390"
+          keyTimes="0;1"
+          dur="1s"
+          begin="a-scene-2-fade-in.end+4s"
+          fill="freeze" />
+    <animate id="a-scene-2-animated-background-transition"
+          attributeName="fill"
+          values="black;red"
+          keyTimes="0;1"
+          dur="1s"
+          begin="a-scene-2-fade-in.end+6s"
+          fill="freeze" />
+    <animate id="ai-scene-2-move-up"
+          attributeName="y"
+          values="200;125"
+          keyTimes="0;1"
+          dur="1s"
+          begin="a-scene-2-fade-in.end+11s"
+          fill="freeze" />
+  </text>
+  <text x="346" y="200" class="futura i-scene-2" opacity="0">i
+    <animate id="i-scene-2-fade-in"
+          attributeName="opacity"
+          values="0;1"
+          keyTimes="0;1"
+          dur="1s"
+          begin="imago-scene-1-fade-out.begin+1s"
+          fill="freeze" />
+    <animate id="i-scene-2-center"
+          attributeName="x"
+          values="346;416"
+          keyTimes="0;1"
+          dur="1s"
+          begin="i-scene-2-fade-in.end+4s"
+          fill="freeze" />
+    <animate id="i-scene-2-animated-background-transition"
+          attributeName="fill"
+          values="black;red"
+          keyTimes="0;1"
+          dur="1s"
+          begin="i-scene-2-fade-in.end+6s"
+          fill="freeze" />
+    <animate id="ai-scene-2-move-up"
+          attributeName="y"
+          values="200;125"
+          keyTimes="0;1"
+          dur="1s"
+          begin="a-scene-2-fade-in.end+11s"
+          fill="freeze" />
+  </text>
+
+  <!-- scene 3: is at the center of who we are. -->
+  <text x="400" y="300" class="source-code-pro is-scene-3" opacity="0">is at the center of who we are
+    <animate id="is-scene-3-fade-in-out"
+          attributeName="opacity"
+          values="0;1;1;0"
+          keyTimes="0;0.3;0.7;1"
+          dur="4s"
+          begin="a-scene-2-fade-in.end+6s"
+          fill="freeze" />
+  </text>
+
+  <!-- Scene 4: emancipation · super-alignment · (rotating circular text) -->
+  <text class="overlay-futura" opacity="0" font-size="12">
+    <textPath href="#circularPath" startOffset="0%" textLength="1120" lengthAdjust="spacing">
+      emancipation · super-alignment · emancipation · super-alignment ·
+    </textPath>
+
+    <animate id="emancipation-super-alignment-scene-4"
+           attributeName="opacity"
+           values="0;1;1;0"
+           keyTimes="0;0.2;0.8;1"
+           keySplines="0.42 0 1 1; 0 0 1 1; 0 0 0.58 1"
+           calcMode="spline"
+           dur="10s"
+           begin="a-scene-2-fade-in.end+12s"
+           fill="freeze" />
+
+    <animateTransform attributeName="transform"
+                    type="rotate"
+                    from="0 395 111"
+                    to="360 395 111"
+                    dur="30s"
+                    begin="a-scene-2-fade-in.end+12s"
+                    repeatCount="indefinite" />
+  </text>
+
+<!--
+  <g>
+    <text class="overlay-futura" opacity="0" font-size="12">
+      <textPath href="#circularPath" startOffset="0%" textLength="1490" lengthAdjust="spacing">
+        emancipation · super-alignment · emancipation · super-alignment ·
+      </textPath>
+      <animate id="emancipation-super-alignment-scene-4"
+            attributeName="opacity"
+            values="0;1;1;0"
+            keyTimes="0;0.2;0.8;1"
+            keySplines="0.42 0 1 1; 0 0 1 1; 0 0 0.58 1"
+            calcMode="spline"
+            dur="10.0s"
+            begin="a-scene-2-fade-in.end+10s.end"
+            fill="freeze" />
+    </text>
+         <animateTransform attributeName="transform"
+                       type="rotate"
+                       from="0 403 200"
+                       to="360 403 200"
+                       dur="10s"
+                       repeatCount="indefinite" />
+  </g>
+-->
+
+
+
+
+</svg>

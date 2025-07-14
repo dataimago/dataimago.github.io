@@ -62,6 +62,13 @@
         text-anchor: middle;
         dominant-baseline: middle;
       }
+      .our-vision-scene-8 {
+        font-family: 'Source Code Pro', monospace;
+        font-size: 20px;
+        fill: black;
+        text-anchor: middle;
+        dominant-baseline: middle;
+      }
       .background {
         fill: white;
       }
@@ -372,6 +379,26 @@
           keyTimes="0;0.2;0.8;1"
           dur="10s"
           begin="a-scene-2-fade-in.end+33s"
+          fill="freeze" />
+  </text>
+
+  <!-- scene 8: Our Vision: -->
+  <text x="400" y="225" class="source-code-pro our-vision-scene-8" opacity="0">Our Vision:
+    <animate id="our-mission-scene-8-fade-in-out"
+          attributeName="opacity"
+          values="0;1;1;0"
+          keyTimes="0;0.2;0.8;1"
+          dur="10s"
+          begin="a-scene-2-fade-in.end+44s"
+          fill="freeze" />
+  </text>
+  <text x="400" y="275" class="source-code-pro our-vision-scene-8" opacity="0">Super-alignment by nurture, not by nature.
+    <animate id="our-mission-scene-8-fade-in-out"
+          attributeName="opacity"
+          values="0;1;1;0"
+          keyTimes="0;0.2;0.8;1"
+          dur="10s"
+          begin="a-scene-2-fade-in.end+44s"
           fill="freeze" />
   </text>
 

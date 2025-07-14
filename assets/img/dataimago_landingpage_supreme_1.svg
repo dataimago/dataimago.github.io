@@ -55,6 +55,13 @@
         text-anchor: middle;
         dominant-baseline: middle;
       }
+      .our-mission-scene-7 {
+        font-family: 'Source Code Pro', monospace;
+        font-size: 20px;
+        fill: black;
+        text-anchor: middle;
+        dominant-baseline: middle;
+      }
       .background {
         fill: white;
       }
@@ -287,10 +294,10 @@
     <animate id="emancipation-super-alignment-scene-4-fade-in-out"
            attributeName="opacity"
            values="0;1;1;0"
-           keyTimes="0;0.2;0.8;1"
+           keyTimes="0;0.1;0.8;1"
            keySplines="0.42 0 1 1; 0 0 1 1; 0 0 0.58 1"
            calcMode="spline"
-           dur="9.5s"
+           dur="9.0s"
            begin="a-scene-2-fade-in.end+11s"
            fill="freeze" />
 
@@ -310,7 +317,7 @@
           values="0;1"
           keyTimes="0;1"
           dur="1s"
-          begin="a-scene-2-fade-in.end+20s"
+          begin="a-scene-2-fade-in.end+19.5s"
           fill="freeze" />
     <animate id="data-scene-5-move-left"
           attributeName="x"
@@ -326,7 +333,7 @@
           values="0;1"
           keyTimes="0;1"
           dur="1s"
-          begin="i-scene-2-fade-in.end+20s"
+          begin="i-scene-2-fade-in.end+19.5s"
           fill="freeze" />
     <animate id="imago-scene-5-move-left"
           attributeName="x"
@@ -342,12 +349,31 @@
     <animate id="we-believe-scene-6-fade-in-out"
           attributeName="opacity"
           values="0;1;1;0"
-          keyTimes="0;0.3;0.8;1"
+          keyTimes="0;0.2;0.8;1"
           dur="10s"
-          begin="a-scene-2-fade-in.end+21.5s"
+          begin="a-scene-2-fade-in.end+22s"
           fill="freeze" />
   </text>
 
+  <!-- scene 7: Our Mission: -->
+  <text x="400" y="225" class="source-code-pro our-mission-scene-7" opacity="0">Our Mission:
+    <animate id="our-mission-scene-7-fade-in-out"
+          attributeName="opacity"
+          values="0;1;1;0"
+          keyTimes="0;0.2;0.8;1"
+          dur="10s"
+          begin="a-scene-2-fade-in.end+33s"
+          fill="freeze" />
+  </text>
+  <text x="400" y="275" class="source-code-pro our-mission-scene-7" opacity="0">The emancipation of humanity through ai super-alignment.
+    <animate id="our-mission-scene-7-fade-in-out"
+          attributeName="opacity"
+          values="0;1;1;0"
+          keyTimes="0;0.2;0.8;1"
+          dur="10s"
+          begin="a-scene-2-fade-in.end+33s"
+          fill="freeze" />
+  </text>
 
 
 

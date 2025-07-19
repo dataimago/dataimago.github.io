@@ -1,46 +1,49 @@
 <svg viewBox="0 0 800 400" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <style>
-      
+      .background {
+        fill: white;
+      }
+
       .futura {
         font-family: 'Futura';
         font-style: italic;
         font-weight: bold;
       }
+
       .source-code-pro {
         font-family: 'Source Code Pro', monospace;
         font-weight: 400;
       }
+
       .data-scene-1, .imago-scene-1 {
         fill: black;
         font-size: 150px;
         text-anchor: middle;
         dominant-baseline: middle;
       }
+
       .a-scene-2, .i-scene-2 {
         fill: black;
         font-size: 150px;
         text-anchor: middle;
         dominant-baseline: middle;
       }
-      .a-scene-2, .i-scene-2 {
-        fill: black;
-        font-size: 150px;
-        text-anchor: middle;
-        dominant-baseline: middle;
-      }
+
       .data-plain, .imago-plain {
         font-size: 150px;
         fill: black;
         text-anchor: middle;
         dominant-baseline: middle;
       }
+
       .a-plain, .i-plain {
         font-size: 150px;
         fill: black;
         text-anchor: middle;
         dominant-baseline: middle;
       }
+
       .is-scene-3 {
         font-family: 'Source Code Pro', monospace;
         font-size: 25px;
@@ -48,30 +51,71 @@
         text-anchor: middle;
         dominant-baseline: middle;
       }
-      .we-believe-scene-6 {
+
+      .our-belief-scene-6 {
         font-family: 'Source Code Pro', monospace;
         font-size: 20px;
+        fill: black;
+        text-anchor: left;
+        dominant-baseline: middle;
+      }
+
+      .our-belief-scene-6-lg {
+        font-family: 'Source Code Pro', monospace;
+        font-size: 25px;
         fill: black;
         text-anchor: middle;
         dominant-baseline: middle;
       }
+
       .our-mission-scene-7 {
         font-family: 'Source Code Pro', monospace;
         font-size: 20px;
         fill: black;
-        text-anchor: middle;
+        text-anchor: left;
         dominant-baseline: middle;
       }
-      .our-vision-scene-8 {
+
+      .our-mission-scene-7-lg {
         font-family: 'Source Code Pro', monospace;
-        font-size: 20px;
+        font-size: 25px;
         fill: black;
         text-anchor: middle;
         dominant-baseline: middle;
       }
-      .background {
-        fill: white;
+
+      .our-vision-scene-8 {
+        font-family: 'Source Code Pro', monospace;
+        font-size: 20px;
+        fill: black;
+        text-anchor: left;
+        dominant-baseline: middle;
       }
+
+      .our-vision-scene-8-lg {
+        font-family: 'Source Code Pro', monospace;
+        font-size: 25px;
+        fill: black;
+        text-anchor: middle;
+        dominant-baseline: middle;
+      }
+
+      .our-philosophy-scene-9 {
+        font-family: 'Source Code Pro', monospace;
+        font-size: 20px;
+        fill: black;
+        text-anchor: left;
+        dominant-baseline: middle;
+      }
+
+      .our-philosophy-scene-9-lg {
+        font-family: 'Source Code Pro', monospace;
+        font-size: 25px;
+        fill: black;
+        text-anchor: middle;
+        dominant-baseline: middle;
+      }
+
       .emancipation-super-alignment-scene-4 {
         font-family: 'Futura';
         font-style: italic;
@@ -86,80 +130,174 @@
         text-anchor: middle;
         dominant-baseline: middle;
       }
+
+      .scene-11-word {
+        font-family: 'Futura';
+        font-style: italic;
+        font-weight: bold;
+        font-size: 48px;
+        font-weight: 400;
+        fill: #000000;
+        text-anchor: left;
+        dominant-baseline: hanging;
+      }
+      
+      .scene-11-letter {
+        font-family: 'Futura';
+        font-style: italic;
+        font-weight: bold;
+        font-size: 48px;
+        font-weight: 400;
+        fill: #FF0000;
+        text-anchor: left;
+        dominant-baseline: hanging;
+      }
+      
+      .scene-11-phonetic {
+        font-family: 'Google Sans', 'Roboto', sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        fill: #5f6368;
+        text-anchor: left;
+        dominant-baseline: hanging;
+      }
+      
+      .scene-11-definition {
+        font-family: 'Google Sans', 'Roboto', sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        fill: #000000;
+        text-anchor: left;
+        dominant-baseline: hanging;
+      }
+      
+      .scene-11-part-of-speech {
+        font-family: 'Google Sans', 'Roboto', sans-serif;
+        font-size: 15px;
+        font-weight: 500;
+        fill: #5f6368;
+        text-anchor: left;
+        dominant-baseline: hanging;
+        font-style: italic;
+      }
+      
+      .scene-11-example {
+        font-family: 'Google Sans', 'Roboto', sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        fill: #FF0000;
+        text-anchor: left;
+        dominant-baseline: hanging;
+        font-style: italic;
+      }
+
+      .scene-11-etymology {
+        font-family: 'Google Sans', 'Roboto', sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        fill: #5f6368;
+        text-anchor: left;
+        dominant-baseline: hanging;
+        font-style: italic;
+      }
+
+      .data-scene-12 {
+        fill: url(#imagoGradient); /* Vibrant Gradient for "data" */
+        font-size: 100px;
+      }
+
+      .imago-scene-12 {
+        fill: url(#imagoGradient); /* Vibrant Gradient for "imago" */
+        font-size: 100px;
+      }
     </style>
 
-    <!-- Inset shadow filter -->
-    <filter id="inset-shadow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur in="SourceAlpha" stdDeviation="2" result="blur" />
-      <feOffset in="blur" dx="-1" dy="-1" result="offset1" />
-      <feOffset in="blur" dx="1" dy="1" result="offset2" />
-      <feFlood flood-color="rgb(230, 230, 230)" flood-opacity="0.5" result="flood1" />
-      <feComposite in="flood1" in2="offset1" operator="in" result="shadow1" />
-      <feFlood flood-color="rgb(180, 180, 180)" flood-opacity="0.2" result="flood2" />
-      <feComposite in="flood2" in2="offset2" operator="in" result="shadow2" />
-      <feMerge>
-        <feMergeNode in="shadow1" />
-        <feMergeNode in="shadow2" />
-        <feMergeNode in="SourceGraphic" />
-      </feMerge>
-    </filter>
+    <!-- Vibrant Animated Gradient Definition -->
+    <linearGradient id="imagoGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4caf50"> <!-- Green -->
+        <animate attributeName="stop-color" values="#4caf50;#42a5f5;#e91e63;#4caf50" dur="3s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#ff9800"> <!-- Orange -->
+        <animate attributeName="stop-color" values="#ff9800;#42a5f5;#9c27b0;#ff9800" dur="3s" repeatCount="indefinite" />
+      </stop>
+    </linearGradient>    
 
     <!-- Circular path -->
     <path id="circularPath"
-          d="M 395 111 m -90,0 a 90,90 0 1,1 180,0 a 90,90 0 1,1 -180,0"
+          d="M 395 121 m -90,0 a 90,90 0 1,1 180,0 a 90,90 0 1,1 -180,0"
           fill="none" />
+
+    <!-- Lines for the Baudrillard quote -->
+    <path id="line-1" d="m50,25 h700" fill="none" stroke="none" />
+    <path id="line-2" d="m50,55 h700" fill="none" stroke="none" />
+    <path id="line-3" d="m50,85 h700" fill="none" stroke="none" />
+    <path id="line-4" d="m50,115 h700" fill="none" stroke="none" />
+    <path id="line-5" d="m50,145 h700" fill="none" stroke="none" />
+    <path id="line-6" d="m50,175 h700" fill="none" stroke="none" />
+    <path id="line-7" d="m50,205 h700" fill="none" stroke="none" />
+    <path id="line-8" d="m50,235 h700" fill="none" stroke="none" />
+    <path id="line-9" d="m50,265 h700" fill="none" stroke="none" />
+    <path id="line-10" d="m50,295 h700" fill="none" stroke="none" />
+    <path id="line-11" d="m50,325 h700" fill="none" stroke="none" />
+    <path id="line-12" d="m50,370 h700" fill="none" stroke="none" />
+    <path id="line-1-our-belief-scene-6-quote" d="m55,250 h690" fill="none" stroke="none" />
+    <path id="line-1-our-mission-scene-7-quote" d="m70,250 h660" fill="none" stroke="none" />
+    <path id="line-1-our-vision-scene-8-quote" d="m150,250 h500" fill="none" stroke="none" />
+    <path id="line-1-our-philosophy-scene-9-quote" d="m60,250 h680" fill="none" stroke="none" />
+    <path id="line-1-coming-soon" d="m250,250 h300" fill="none" stroke="none" />
   </defs>
 
   <!-- Background -->
   <rect class="background" width="100%" height="100%" />
 
-  <!-- Scene 1: dataimago from white to black -->
-  <text x="185" y="200" class="futura data-scene-1" opacity="0">data
+  <!-- Scene 1: data imago to dataimago and from white to black -->
+  <text x="175" y="200" class="futura data-scene-1" opacity="0">data
     <animate id="data-scene-1-fade-in"
           attributeName="opacity"
           values="0;1"
           keyTimes="0;1"
-          dur="3s"
+          dur="2s"
           begin="0s"
           fill="freeze" />
     <set attributeName="opacity" to="1" begin="data-scene-1-fade-in.end" />
     <animate id="data-scene-1-move-to-center"
           attributeName="x"
-          values="185;205"
+          values="175;205"
           keyTimes="0;1"
           dur="1s"
-          begin="data-scene-1-fade-in.end+1s"
+          begin="data-scene-1-fade-in.end+2s"
           fill="freeze" />
     <animate id="data-scene-1-fade-out"
           attributeName="opacity"
           values="1;0"
           keyTimes="0;1"
-          dur="3s"
-          begin="data-scene-1-fade-in.end+2s"
+          dur="2s"
+          begin="data-scene-1-fade-in.end+3s"
           fill="freeze" />
   </text>
-  <text x="562" y="200" class="futura imago-scene-1" opacity="0">imago
+
+  <text x="572" y="200" class="futura imago-scene-1" opacity="0">imago
     <animate id="imago-scene-1-fade-in"
           attributeName="opacity"
           values="0;1"
           keyTimes="0;1"
-          dur="3s"
-          begin="0s"
+          dur="2s"
+          begin="2s"
           fill="freeze" />
     <set attributeName="opacity" to="1" begin="imago-scene-1-fade-in.end" />
     <animate id="imago-scene-1-move-to-center"
           attributeName="x"
-          values="562;542"
+          values="572;542"
           keyTimes="0;1"
           dur="1s"
-          begin="imago-scene-1-fade-in.end+1s"
+          begin="4s"
           fill="freeze" />
     <animate id="imago-scene-1-fade-out"
           attributeName="opacity"
           values="1;0"
           keyTimes="0;1"
-          dur="3s"
-          begin="imago-scene-1-fade-in.end+2s"
+          dur="2s"
+          begin="5s"
           fill="freeze" />
   </text>
 
@@ -177,21 +315,21 @@
           values="320;390"
           keyTimes="0;1"
           dur="1s"
-          begin="a-scene-2-fade-in.end+3s"
+          begin="a-scene-2-fade-in.end+1.5s"
           fill="freeze" />
     <animate id="a-scene-2-animated-background-transition"
           attributeName="fill"
           values="black;red"
           keyTimes="0;1"
           dur="1s"
-          begin="a-scene-2-fade-in.end+5s"
+          begin="a-scene-2-fade-in.end+1.5s"
           fill="freeze" />
     <animate id="a-scene-2-move-up"
           attributeName="y"
-          values="200;125"
+          values="200;135"
           keyTimes="0;1"
           dur="1s"
-          begin="a-scene-2-fade-in.end+9.1s"
+          begin="a-scene-2-fade-in.end+8.1s"
           fill="freeze" />
     <animate id="a-scene-2-shrink"
           attributeName="font-size"
@@ -209,7 +347,7 @@
           fill="freeze" />
     <animate id="a-scene-2-adjust-up"
           attributeName="y"
-          values="125;100"
+          values="135;120"
           keyTimes="0;1"
           dur="1s"
           begin="i-scene-2-fade-in.end+18.5s"
@@ -218,10 +356,11 @@
           attributeName="opacity"
           values="1;0"
           keyTimes="0;1"
-          dur="1s"
-          begin="a-scene-2-fade-in.end+19.5s"
+          dur="0.4s"
+          begin="a-scene-2-fade-in.end+20.1s"
           fill="freeze" />
   </text>
+
   <text x="346" y="200" class="futura i-scene-2" opacity="0">i
     <animate id="i-scene-2-fade-in"
           attributeName="opacity"
@@ -235,21 +374,21 @@
           values="346;416"
           keyTimes="0;1"
           dur="1s"
-          begin="i-scene-2-fade-in.end+3s"
+          begin="i-scene-2-fade-in.end+1.5s"
           fill="freeze" />
     <animate id="i-scene-2-animated-background-transition"
           attributeName="fill"
           values="black;red"
           keyTimes="0;1"
           dur="1s"
-          begin="i-scene-2-fade-in.end+5s"
+          begin="i-scene-2-fade-in.end+1.5s"
           fill="freeze" />
     <animate id="i-scene-2-move-up"
           attributeName="y"
-          values="200;125"
+          values="200;135"
           keyTimes="0;1"
           dur="1s"
-          begin="i-scene-2-fade-in.end+9.1s"
+          begin="i-scene-2-fade-in.end+8.1s"
           fill="freeze" />
     <animate id="i-scene-2-shrink"
           attributeName="font-size"
@@ -267,7 +406,7 @@
           fill="freeze" />
     <animate id="i-scene-2-adjust-up"
           attributeName="y"
-          values="125;100"
+          values="135;120"
           keyTimes="0;1"
           dur="1s"
           begin="i-scene-2-fade-in.end+18.5s"
@@ -276,8 +415,8 @@
           attributeName="opacity"
           values="1;0"
           keyTimes="0;1"
-          dur="0.5s"
-          begin="i-scene-2-fade-in.end+20s"
+          dur="0.4s"
+          begin="i-scene-2-fade-in.end+20.1s"
           fill="freeze" />
   </text>
 
@@ -286,9 +425,9 @@
     <animate id="is-scene-3-fade-in-out"
           attributeName="opacity"
           values="0;1;1;0"
-          keyTimes="0;0.3;0.8;1"
-          dur="4.5s"
-          begin="a-scene-2-fade-in.end+5s"
+          keyTimes="0;0.1;0.9;1"
+          dur="9s"
+          begin="a-scene-2-fade-in.end+2.0s"
           fill="freeze" />
   </text>
 
@@ -305,20 +444,20 @@
            keySplines="0.42 0 1 1; 0 0 1 1; 0 0 0.58 1"
            calcMode="spline"
            dur="9.0s"
-           begin="a-scene-2-fade-in.end+11s"
+           begin="a-scene-2-fade-in.end+10.5s"
            fill="freeze" />
 
     <animateTransform attributeName="transform"
                     type="rotate"
-                    from="0 395 111"
-                    to="360 395 111"
+                    from="0 395 121"
+                    to="360 395 121"
                     dur="30s"
-                    begin="a-scene-2-fade-in.end+11s"
+                    begin="a-scene-2-fade-in.end+10.5s"
                     repeatCount="indefinite" />
   </text>
 
   <!-- scene 5: data and imago -->
-  <text x="340" y="100" class="futura data-scene-5" opacity="0">data
+  <text x="340" y="120" class="futura data-scene-5" opacity="0">data
     <animate id="data-scene-5-fade-in"
           attributeName="opacity"
           values="0;1"
@@ -333,8 +472,15 @@
           dur="1s"
           begin="a-scene-2-fade-in.end+21s"
           fill="freeze" />
+    <animate id="data-scene-5-fade-out"
+          attributeName="opacity"
+          values="1;0"
+          keyTimes="0;1"
+          dur="1s"
+          begin="a-scene-2-fade-in.end+54s"
+          fill="freeze" />
   </text>
-  <text x="509" y="100" class="futura imago-scene-5" opacity="0">imago
+  <text x="509" y="120" class="futura imago-scene-5" opacity="0">imago
     <animate id="imago-scene-5-fade-in"
           attributeName="opacity"
           values="0;1"
@@ -349,59 +495,717 @@
           dur="1s"
           begin="i-scene-2-fade-in.end+21s"
           fill="freeze" />
+    <animate id="imago-scene-5-fade-out"
+          attributeName="opacity"
+          values="1;0"
+          keyTimes="0;1"
+          dur="1s"
+          begin="i-scene-2-fade-in.end+54s"
+          fill="freeze" />
   </text>
 
-  <!-- scene 6: We believe that ai can power virtuous cycles to improve the world. -->
-  <text x="400" y="250" class="source-code-pro we-believe-scene-6" opacity="0">We believe that ai can power virtuous cycles to improve the world.
+  <!-- scene 6: Our Belief: -->
+  <text x="400" y="190" class="source-code-pro our-belief-scene-6-lg" opacity="0">Our Belief:
     <animate id="we-believe-scene-6-fade-in-out"
           attributeName="opacity"
           values="0;1;1;0"
           keyTimes="0;0.2;0.8;1"
-          dur="10s"
-          begin="a-scene-2-fade-in.end+22s"
+          dur="7s"
+          begin="a-scene-2-fade-in.end+23s"
           fill="freeze" />
   </text>
+
+  <g id="our-belief-scene-6-quote" opacity="0">
+   <animate attributeName="opacity" to="1" begin="a-scene-2-fade-in.end+23.5s" dur="1ms" fill="freeze" />
+
+   <path>
+     <animate id="d-our-belief-scene-6-quote" attributeName="d" begin="a-scene-2-fade-in.end+24s"
+       dur="2.6s" fill="freeze"
+       values="m55,250 h0 ; m55,250 h0 ; m55,250 h690 ; m55,250 h690"
+       keyTimes="0;0;0.91;1"
+       href="#line-1-our-belief-scene-6-quote" />
+   </path>
+
+   <text class="source-code-pro our-belief-scene-6"
+         dominant-baseline="hanging"
+         x="0" y="0" text-anchor="left" opacity="0">
+     <animate attributeName="opacity" to="1" begin="a-scene-2-fade-in.end+24s" dur="1ms" fill="freeze" />
+     <textPath href="#line-1-our-belief-scene-6-quote">
+       AI can enable virtuous cycles of improvement in the world
+     </textPath>
+     <animate id="line-1-out-belief-scene-6-fade-out"
+         attributeName="opacity"
+         values="1;0"
+         keyTimes="0;1"
+         dur="1s"
+         begin="a-scene-2-fade-in.end+29s"
+         fill="freeze" />
+   </text>
+  </g>
 
   <!-- scene 7: Our Mission: -->
-  <text x="400" y="225" class="source-code-pro our-mission-scene-7" opacity="0">Our Mission:
+  <text x="400" y="190" class="source-code-pro our-mission-scene-7-lg" opacity="0">Our Mission:
     <animate id="our-mission-scene-7-fade-in-out"
           attributeName="opacity"
           values="0;1;1;0"
           keyTimes="0;0.2;0.8;1"
-          dur="10s"
-          begin="a-scene-2-fade-in.end+33s"
+          dur="7s"
+          begin="a-scene-2-fade-in.end+30s"
           fill="freeze" />
   </text>
-  <text x="400" y="275" class="source-code-pro our-mission-scene-7" opacity="0">The emancipation of humanity through ai super-alignment.
-    <animate id="our-mission-scene-7-fade-in-out"
-          attributeName="opacity"
-          values="0;1;1;0"
-          keyTimes="0;0.2;0.8;1"
-          dur="10s"
-          begin="a-scene-2-fade-in.end+33s"
-          fill="freeze" />
-  </text>
+
+  <g id="our-mission-scene-7-quote" opacity="0">
+   <animate attributeName="opacity" to="1" begin="a-scene-2-fade-in.end+30.5s" dur="1ms" fill="freeze" />
+
+   <path>
+     <animate id="d-our-mission-scene-7-quote" attributeName="d" begin="a-scene-2-fade-in.end+31s"
+       dur="2.6s" fill="freeze"
+       values="m70,250 h0 ; m70,250 h0 ; m70,250 h660 ; m70,250 h660"
+       keyTimes="0;0;0.91;1"
+       href="#line-1-our-mission-scene-7-quote" />
+   </path>
+
+   <text class="source-code-pro our-mission-scene-7"
+         dominant-baseline="hanging"
+         x="0" y="0" text-anchor="left" opacity="0">
+     <animate attributeName="opacity" to="1" begin="a-scene-2-fade-in.end+31s" dur="1ms" fill="freeze" />
+     <textPath href="#line-1-our-mission-scene-7-quote">
+       The emancipation of humanity through ai super-alignment
+     </textPath>
+     <animate id="line-1-our-mission-scene-7-fade-out"
+         attributeName="opacity"
+         values="1;0"
+         keyTimes="0;1"
+         dur="1s"
+         begin="a-scene-2-fade-in.end+36s"
+         fill="freeze" />
+   </text>
+  </g>
 
   <!-- scene 8: Our Vision: -->
-  <text x="400" y="225" class="source-code-pro our-vision-scene-8" opacity="0">Our Vision:
+  <text x="400" y="190" class="source-code-pro our-vision-scene-8-lg" opacity="0">Our Vision:
     <animate id="our-mission-scene-8-fade-in-out"
           attributeName="opacity"
           values="0;1;1;0"
           keyTimes="0;0.2;0.8;1"
-          dur="10s"
-          begin="a-scene-2-fade-in.end+44s"
+          dur="7s"
+          begin="a-scene-2-fade-in.end+38s"
           fill="freeze" />
   </text>
-  <text x="400" y="275" class="source-code-pro our-vision-scene-8" opacity="0">Super-alignment by nurture, not by nature.
-    <animate id="our-mission-scene-8-fade-in-out"
+
+  <g id="our-vision-scene-8-quote" opacity="0">
+   <animate attributeName="opacity" to="1" begin="a-scene-2-fade-in.end+38.5s" dur="1ms" fill="freeze" />
+
+   <path>
+     <animate id="d-our-vision-scene-8-quote" attributeName="d" begin="a-scene-2-fade-in.end+39s"
+       dur="2.6s" fill="freeze"
+       values="m150,250 h0 ; m150,250 h0 ; m150,250 h500 ; m150,250 h500"
+       keyTimes="0;0;0.91;1"
+       href="#line-1-our-vision-scene-8-quote" />
+   </path>
+
+   <text class="source-code-pro our-vision-scene-8"
+         dominant-baseline="hanging"
+         x="0" y="0" text-anchor="left" opacity="0">
+     <animate attributeName="opacity" to="1" begin="a-scene-2-fade-in.end+39s" dur="1ms" fill="freeze" />
+     <textPath href="#line-1-our-vision-scene-8-quote">
+       Super-alignment by nurture, not by nature
+     </textPath>
+     <animate id="line-1-our-vision-scene-8-fade-out"
+         attributeName="opacity"
+         values="1;0"
+         keyTimes="0;1"
+         dur="1s"
+         begin="a-scene-2-fade-in.end+44s"
+         fill="freeze" />
+   </text>
+  </g>
+
+  <!-- scene 9: Our Philosophy: -->
+  <text x="400" y="190" class="source-code-pro our-philosophy-scene-9-lg" opacity="0">Our Philosophy:
+    <animate id="our-philosophy-scene-9-fade-in-out"
           attributeName="opacity"
           values="0;1;1;0"
           keyTimes="0;0.2;0.8;1"
-          dur="10s"
-          begin="a-scene-2-fade-in.end+44s"
+          dur="7s"
+          begin="a-scene-2-fade-in.end+46s"
           fill="freeze" />
   </text>
 
+  <g id="our-philosophy-scene-9-quote" opacity="0">
+   <animate attributeName="opacity" to="1" begin="a-scene-2-fade-in.end+46.5s" dur="1ms" fill="freeze" />
 
+   <path>
+     <animate id="d-our-philosophy-scene-9-quote" attributeName="d" begin="a-scene-2-fade-in.end+47s"
+       dur="2.6s" fill="freeze"
+       values="m60,250 h0 ; m60,250 h0 ; m60,250 h680 ; m60,250 h680"
+       keyTimes="0;0;0.91;1"
+       href="#line-1-our-philosophy-scene-9-quote" />
+   </path>
+
+   <text class="source-code-pro our-philosophy-scene-9"
+         dominant-baseline="hanging"
+         x="0" y="0" text-anchor="left" opacity="0">
+     <animate attributeName="opacity" to="1" begin="a-scene-2-fade-in.end+47s" dur="1ms" fill="freeze" />
+     <textPath href="#line-1-our-philosophy-scene-9-quote">
+       Super-alignment embeds ai in culture, not culture in ai
+     </textPath>
+     <animate id="line-1-our-philosophy-scene-9-fade-out"
+         attributeName="opacity"
+         values="1;0"
+         keyTimes="0;1"
+         dur="1s"
+         begin="a-scene-2-fade-in.end+52s"
+         fill="freeze" />
+   </text>
+  </g>
+
+  <!-- scene 10: Baudrillard quote -->
+  <g id="baudrillard-quote" opacity="0">
+    <animate attributeName="opacity" to="1" begin="a-scene-2-fade-in.end+55s" dur="1ms" fill="freeze" />
+
+    <!-- line 1 -->
+    <path>
+      <animate id="d1" attributeName="d" begin="a-scene-2-fade-in.end+55s"
+        dur="2.6s" fill="freeze"
+        values="m50,25 h0 ; m50,25 h0 ; m50,25 h700 ; m50,25 h700"
+        keyTimes="0;0;0.91;1"
+        href="#line-1" />
+    </path>
+
+    <text font-family="'Source Code Pro', monospace" fill="#000000" font-size="22"
+          dominant-baseline="hanging"
+          x="0" y="0" text-anchor="left" opacity="0">
+      <animate attributeName="opacity" to="1" begin="0s" dur="1ms" fill="freeze" />
+      <textPath href="#line-1">
+        If men create intelligent machines, or fantasize
+      </textPath>
+      <animate id="line-1-scene-10-fade-out"
+          attributeName="opacity"
+          values="1;0"
+          keyTimes="0;1"
+          dur="1s"
+          begin="a-scene-2-fade-in.end+85s"
+          fill="freeze" />
+    </text>
+
+    <!-- line 2 -->
+    <path>
+      <animate id="d2" attributeName="d" begin="d1.end-0.3s"
+        dur="2.6s" fill="freeze"
+        values="m50,55 h0 ; m50,55 h0 ; m50,55 h700 ; m50,55 h700"
+        keyTimes="0;0.0;0.91;1"
+        href="#line-2" />
+    </path>
+
+    <text font-family="'Source Code Pro', monospace" fill="#000000" font-size="22"
+          dominant-baseline="hanging"
+          x="0" y="0" text-anchor="left" opacity="0">
+      <animate attributeName="opacity" to="1" begin="d1.end-0.3s" dur="1ms" fill="freeze" />
+      <textPath href="#line-2">
+         about them, it is either because they secretly
+      </textPath>
+      <animate id="line-2-scene-10-fade-out"
+          attributeName="opacity"
+          values="1;0"
+          keyTimes="0;1"
+          dur="1s"
+          begin="a-scene-2-fade-in.end+85s"
+          fill="freeze" />
+    </text>
+
+    <!-- line 3 -->
+    <path>
+      <animate id="d3" attributeName="d" begin="d2.end-0.4s"
+        dur="2.6s" fill="freeze"
+        values="m50,85 h0 ; m50,85 h0 ; m50,85 h700 ; m50,85 h700"
+        keyTimes="0;0.0;0.91;1"
+        href="#line-3" />
+    </path>
+
+    <text font-family="'Source Code Pro', monospace" fill="#000000" font-size="22"
+          dominant-baseline="hanging"
+          x="0" y="0" text-anchor="left" opacity="0">
+      <animate attributeName="opacity" to="1" begin="d2.end-0.4s" dur="1ms" fill="freeze" />
+      <textPath href="#line-3">
+         despair of their own intelligence or because they
+      </textPath>
+      <animate id="line-3-scene-10-fade-out"
+          attributeName="opacity"
+          values="1;0"
+          keyTimes="0;1"
+          dur="1s"
+          begin="a-scene-2-fade-in.end+85s"
+          fill="freeze" />
+    </text>
+    
+    <!-- line 4 -->
+    <path>
+      <animate id="d4" attributeName="d" begin="d3.end-0.3s"
+        dur="2.6s" fill="freeze"
+        values="m50,115 h0 ; m50,115 h0 ; m50,115 h700 ; m50,115 h700"
+        keyTimes="0;0.0;0.91;1"
+        href="#line-4" />
+    </path>
+
+    <text font-family="'Source Code Pro', monospace" fill="#000000" font-size="22"
+          dominant-baseline="hanging"
+          x="0" y="0" text-anchor="left" opacity="0">
+      <animate attributeName="opacity" to="1" begin="d3.end-0.3s" dur="1ms" fill="freeze" />
+      <textPath href="#line-4">
+         are in danger of succumbing to the weight of a
+      </textPath>
+      <animate id="line-4-scene-10-fade-out"
+          attributeName="opacity"
+          values="1;0"
+          keyTimes="0;1"
+          dur="1s"
+          begin="a-scene-2-fade-in.end+85s"
+          fill="freeze" />
+    </text>
+    
+    <!-- line 5 -->
+    <path>
+      <animate id="d5" attributeName="d" begin="d4.end-0.3s"
+        dur="2.6s" fill="freeze"
+        values="m50,145 h0 ; m50,145 h0 ; m50,145 h700 ; m50,145 h700"
+        keyTimes="0;0.0;0.91;1"
+        href="#line-5" />
+    </path>
+
+    <text font-family="'Source Code Pro', monospace" fill="#000000" font-size="22"
+          dominant-baseline="hanging"
+          x="0" y="0" text-anchor="left" opacity="0">
+      <animate attributeName="opacity" to="1" begin="d4.end-0.3s" dur="1ms" fill="freeze" />
+      <textPath href="#line-5">
+         monstrous and useless intelligence which they seek
+      </textPath>
+      <animate id="line-5-scene-10-fade-out"
+          attributeName="opacity"
+          values="1;0"
+          keyTimes="0;1"
+          dur="1s"
+          begin="a-scene-2-fade-in.end+85s"
+          fill="freeze" />
+    </text>
+    
+    <!-- line 6 -->
+    <path>
+      <animate id="d6" attributeName="d" begin="d5.end-0.3s"
+        dur="2.6s" fill="freeze"
+        values="m50,175 h0 ; m50,175 h0 ; m50,175 h700 ; m50,175 h700"
+        keyTimes="0;0.0;0.91;1"
+        href="#line-6" />
+    </path>
+
+    <text font-family="'Source Code Pro', monospace" fill="#000000" font-size="22"
+          dominant-baseline="hanging"
+          x="0" y="0" text-anchor="left" opacity="0">
+      <animate attributeName="opacity" to="1" begin="d5.end-0.3s" dur="1ms" fill="freeze" />
+      <textPath href="#line-6">
+           to exorcize by transferring it to machines, where
+      </textPath>
+      <animate id="line-6-scene-10-fade-out"
+          attributeName="opacity"
+          values="1;0"
+          keyTimes="0;1"
+          dur="1s"
+          begin="a-scene-2-fade-in.end+85s"
+          fill="freeze" />
+    </text>
+    
+    <!-- line 7 -->
+    <path>
+      <animate id="d7" attributeName="d" begin="d6.end-0.3s"
+        dur="2.6s" fill="freeze"
+        values="m50,205 h0 ; m50,205 h0 ; m50,205 h700 ; m50,205 h700"
+        keyTimes="0;0.0;0.91;1"
+        href="#line-7" />
+    </path>
+
+    <text font-family="'Source Code Pro', monospace" fill="#000000" font-size="22"
+          dominant-baseline="hanging"
+          x="0" y="0" text-anchor="left" opacity="0">
+      <animate attributeName="opacity" to="1" begin="d6.end-0.3s" dur="1ms" fill="freeze" />
+      <textPath href="#line-7">
+          they can play with it and make fun of it. By
+      </textPath>
+      <animate id="line-7-scene-10-fade-out"
+          attributeName="opacity"
+          values="1;0"
+          keyTimes="0;1"
+          dur="1s"
+          begin="a-scene-2-fade-in.end+85s"
+          fill="freeze" />
+    </text>
+    
+    <!-- line 8 -->
+    <path>
+      <animate id="d8" attributeName="d" begin="d7.end-0.3s"
+        dur="2.6s" fill="freeze"
+        values="m50,235 h0 ; m50,235 h0 ; m50,235 h700 ; m50,235 h700"
+        keyTimes="0;0.0;0.91;1"
+        href="#line-8" />
+    </path>
+
+    <text font-family="'Source Code Pro', monospace" fill="#000000" font-size="22"
+          dominant-baseline="hanging"
+          x="0" y="0" text-anchor="left" opacity="0">
+      <animate attributeName="opacity" to="1" begin="d7.end-0.3s" dur="1ms" fill="freeze" />
+      <textPath href="#line-8">
+          entrusting this burdensome intelligence to machines
+      </textPath>
+      <animate id="line-8-scene-10-fade-out"
+          attributeName="opacity"
+          values="1;0"
+          keyTimes="0;1"
+          dur="1s"
+          begin="a-scene-2-fade-in.end+85s"
+          fill="freeze" />
+    </text>
+
+    <!-- line 9 -->
+    <path>
+      <animate id="d9" attributeName="d" begin="d8.end"
+        dur="2.6s" fill="freeze"
+        values="m50,265 h0 ; m50,265 h0 ; m50,265 h700 ; m50,265 h700"
+        keyTimes="0;0.0;0.91;1"
+        href="#line-9" />
+    </path>
+
+    <text font-family="'Source Code Pro', monospace" fill="#000000" font-size="22"
+          dominant-baseline="hanging"
+          x="0" y="0" text-anchor="left" opacity="0">
+      <animate attributeName="opacity" to="1" begin="d8.end" dur="1ms" fill="freeze" />
+      <textPath href="#line-9">
+          we are released from any responsibility to knowledge,
+      </textPath>
+      <animate id="line-9-scene-10-fade-out"
+          attributeName="opacity"
+          values="1;0"
+          keyTimes="0;1"
+          dur="1s"
+          begin="a-scene-2-fade-in.end+85s"
+          fill="freeze" />
+    </text>
+
+    <!-- line 10 -->
+    <path>
+      <animate id="d10" attributeName="d" begin="d9.end-0.3s"
+        dur="2.6s" fill="freeze"
+        values="m50,295 h0 ; m50,295 h0 ; m50,295 h700 ; m50,295 h700"
+        keyTimes="0;0.0;0.91;1"
+        href="#line-10" />
+    </path>
+
+    <text font-family="'Source Code Pro', monospace" fill="#000000" font-size="22"
+          dominant-baseline="hanging"
+          x="0" y="0" text-anchor="left" opacity="0">
+      <animate attributeName="opacity" to="1" begin="d9.end-0.3s" dur="1ms" fill="freeze" />
+      <textPath href="#line-10">
+          much as entrusting power to politicians allows
+      </textPath>
+      <animate id="line-10-scene-10-fade-out"
+          attributeName="opacity"
+          values="1;0"
+          keyTimes="0;1"
+          dur="1s"
+          begin="a-scene-2-fade-in.end+85s"
+          fill="freeze" />
+    </text>
+
+    <!-- line 11 -->
+    <path>
+      <animate id="d11" attributeName="d" begin="d10.end-0.3s"
+        dur="2.6s" fill="freeze"
+        values="m50,325 h0 ; m50,325 h0 ; m50,325 h700 ; m50,325 h700"
+        keyTimes="0;0.0;0.91;1"
+        href="#line-11" />
+    </path>
+
+    <text font-family="'Source Code Pro', monospace" fill="#000000" font-size="22"
+          dominant-baseline="hanging"
+          x="0" y="0" text-anchor="left" opacity="0">
+      <animate attributeName="opacity" to="1" begin="d10.end-0.3s" dur="1ms" fill="freeze" />
+      <textPath href="#line-11">
+            us to disdain any aspiration of our own to power.
+      </textPath>
+      <animate id="line-11-scene-10-fade-out"
+          attributeName="opacity"
+          values="1;0"
+          keyTimes="0;1"
+          dur="1s"
+          begin="a-scene-2-fade-in.end+85s"
+          fill="freeze" />
+    </text>
+
+    <!-- line 12 -->
+    <path>
+      <animate id="d12" attributeName="d" begin="d11.end+0.2s"
+        dur="2.6s" fill="freeze"
+        values="m50,370 h0 ; m50,370 h0 ; m50,370 h700 ; m50,370 h700"
+        keyTimes="0;0.0;0.91;1"
+        href="#line-12" />
+    </path>
+
+         <text font-family="'Source Code Pro', monospace" fill="#ff0000" font-size="18"
+           dominant-baseline="hanging"
+           x="225" y="0" text-anchor="left" opacity="0">
+       <animate attributeName="opacity" to="1" begin="d11.end+0.2s" dur="1ms" fill="freeze" />
+       <textPath href="#line-12">
+           Jean Baudrillard, <tspan font-style="italic">Xerox and Infinity</tspan> (1988)
+       </textPath>
+     </text>
+      <animate id="line-12-scene-10-fade-out"
+          attributeName="opacity"
+          values="1;0"
+          keyTimes="0;1"
+          dur="1s"
+          begin="a-scene-2-fade-in.end+85s"
+          fill="freeze" />
+  </g>
+
+  <!-- scene 11: dataimago definition -->
+  <!-- Word: dataimago -->
+  <text x="90" y="50" class="scene-11-word" opacity="0">data
+    <animate id="data-appear"
+             attributeName="opacity"
+             values="0;1"
+             keyTimes="0;1"
+             dur="2s"
+             begin="d12.end+3s"
+             fill="freeze" />
+    <animate id="data-move-right"
+             attributeName="x"
+             values="90;100"
+             keyTimes="0;1"
+             dur="1s"
+             begin="d12.end+5s"
+             fill="freeze" />
+  </text>
+
+  <text x="210" y="50" class="scene-11-word" opacity="0">imago
+    <animate id="imago-appear"
+             attributeName="opacity"
+             values="0;1"
+             keyTimes="0;1"
+             dur="2s"
+             begin="d12.end+3s"
+             fill="freeze" />
+    <animate id="imago-move-left"
+             attributeName="x"
+             values="210;190"
+             keyTimes="0;1"
+             dur="1s"
+             begin="d12.end+5s"
+             fill="freeze" />
+  </text>
+
+  <!-- Letters: ai -->
+  <text x="173.7" y="50" class="scene-11-letter" opacity="0">a
+    <animate id="a-appear"
+             attributeName="opacity"
+             values="0;1"
+             keyTimes="0;1"
+             dur="1s"
+             begin="d12.end+6s"
+             fill="freeze" />
+  </text>
+
+  <text x="190" y="50" class="scene-11-letter" opacity="0">i
+    <animate id="i-appear"
+             attributeName="opacity"
+             values="0;1"
+             keyTimes="0;1"
+             dur="1s"
+             begin="d12.end+6s"
+             fill="freeze" />
+  </text>
+
+  <!-- Phonetic pronunciation -->
+  <text x="100" y="105" class="scene-11-phonetic" opacity="0">
+     /dādə&#8202;ˈ&#8202;mäɡō/
+    <animate id="phonetic-appear"
+             attributeName="opacity"
+             values="0;1"
+             keyTimes="0;1"
+             dur="0.8s"
+             begin="a-appear.end+0.3s"
+             fill="freeze" />
+  </text>
+
+  <!-- Part of speech -->
+  <text x="100" y="130" class="scene-11-part-of-speech" opacity="0">
+    noun
+    <animate id="pos-appear"
+             attributeName="opacity"
+             values="0;1"
+             keyTimes="0;1"
+             dur="0.6s"
+             begin="phonetic-appear.end+0.3s"
+             fill="freeze" />
+  </text>
+
+  <!-- Etymology -->
+  <text x="100" y="155" class="scene-11-etymology" opacity="0">
+    Etymology: From Latin "data" (things given) + "imago" (image, representation)
+    <animate id="etymology-appear"
+             attributeName="opacity"
+             values="0;1"
+             keyTimes="0;1"
+             dur="1s"
+             begin="phonetic-appear.end+0.8s"
+             fill="freeze" />
+  </text>
+
+  <!-- Definition 1 -->
+  <text x="100" y="200" class="scene-11-definition" opacity="0">
+  A system that fuses human meaning and machine logic to guide social transformation
+  <animate id="def1-appear"
+          attributeName="opacity"
+          values="0;1"
+          keyTimes="0;1"
+          dur="1.2s"
+          begin="etymology-appear.end+0.5s"
+          fill="freeze" />
+  </text>
+
+  <!-- Definition 2 -->
+  <text x="100" y="220" class="scene-11-definition" opacity="0">
+  using ai to reconcile interpretation and measurement in service of human flourishing.
+  <animate id="def2-appear"
+          attributeName="opacity"
+          values="0;1"
+          keyTimes="0;1"
+          dur="1.2s"
+          begin="etymology-appear.end+0.5s"
+          fill="freeze" />
+  </text>
+
+  <!-- Definition 3 -->
+  <text x="100" y="240" class="scene-11-definition" opacity="0">
+  Building systems that emancipate rather than dominate.
+  <animate id="def3-appear"
+          attributeName="opacity"
+          values="0;1"
+          keyTimes="0;1"
+          dur="1.2s"
+          begin="etymology-appear.end+0.5s"
+          fill="freeze" />
+  </text>
+
+  <!-- Legacy -->
+  <text x="100" y="280" class="scene-11-definition" opacity="0">
+  Legacy: super-alignment, human-centered ai, critical transformation
+  <animate id="legacy-appear"
+          attributeName="opacity"
+          values="0;1"
+          keyTimes="0;1"
+          dur="1s"
+          begin="def3-appear.end+0.5s"
+          fill="freeze" />
+  </text>
+
+  <!-- Usage example -->
+  <text x="100" y="310" class="scene-11-example" opacity="0">
+  "dataimago is the instantiation of critical theory in software."
+  <animate id="usage-appear"
+          attributeName="opacity"
+          values="0;1"
+          keyTimes="0;1"
+          dur="1s"
+          begin="legacy-appear.end+0.4s"
+          fill="freeze" />
+  </text>
+
+  <!-- Scene 12: dataimago.ai Coming Soon ... -->
+  <rect width="100%" height="100%" fill="white" stroke="none" opacity="0">
+  <animate id="rect-scene-12-fade-in"
+          attributeName="opacity"
+          values="0;1"
+          keyTimes="0;1"
+          dur="2s"
+          begin="usage-appear.end+2s"
+          fill="freeze" />
+  </rect>
+
+  <text x="90" y="160" class="futura data-scene-12" opacity="0">data
+    <animate id="data-scene-12-fade-in"
+          attributeName="opacity"
+          values="0;1"
+          keyTimes="0;1"
+          dur="2s"
+          begin="usage-appear.end+2.4s"
+          fill="freeze" />
+    <set attributeName="opacity" to="1" begin="usage-appear.end+3.4s" />
+    <animate id="data-scene-12-move-to-center"
+          attributeName="x"
+          values="90;100.5"
+          keyTimes="0;1"
+          dur="1s"
+          begin="usage-appear.end+4.4s"
+          fill="freeze" />
+    <animate id="data-scene-12-fade-out"
+          attributeName="opacity"
+          values="1;0"
+          keyTimes="0;1"
+          dur="2s"
+          begin="usage-appear.end+14.4s"
+          fill="freeze" />
+  </text>
+
+  <text x="300" y="160" class="futura imago-scene-12" opacity="0">imago.ai
+    <animate id="imago-scene-12-fade-in"
+          attributeName="opacity"
+          values="0;1"
+          keyTimes="0;1"
+          dur="2s"
+          begin="usage-appear.end+2.4s"
+          fill="freeze" />
+    <set attributeName="opacity" to="1" begin="usage-appear.end+3.4s" />
+    <animate id="imago-scene-12-move-to-center"
+          attributeName="x"
+          values="300;289.5"
+          keyTimes="0;1"
+          dur="1s"
+          begin="usage-appear.end+4.4s"
+          fill="freeze" />
+    <animate id="imago-scene-12-fade-out"
+          attributeName="opacity"
+          values="1;0"
+          keyTimes="0;1"
+          dur="2s"
+          begin="usage-appear.end+14.4s"
+          fill="freeze" />
+  </text>
+
+  <!-- Coming Soon ... -->
+  <g id="coming-soon-quote" opacity="0">
+   <animate attributeName="opacity" to="1" begin="usage-appear.end+2.4s" dur="1ms" fill="freeze" />
+
+   <path>
+     <animate id="d1" attributeName="d" begin="usage-appear.end+3.4s"
+       dur="2.6s" fill="freeze"
+       values="m250,250 h0 ; m250,250 h0 ; m250,250 h300 ; m250,250 h300"
+       keyTimes="0;0;0.91;1"
+       href="#line-1-coming-soon" />
+   </path>
+
+   <text font-family="'Source Code Pro', monospace" fill="#000000" font-size="32"
+         dominant-baseline="hanging"
+         x="0" y="0" text-anchor="left" opacity="0">
+     <animate attributeName="opacity" to="1" begin="usage-appear.end+3.4s" dur="1ms" fill="freeze" />
+     <textPath href="#line-1-coming-soon">
+       Coming Soon ...
+     </textPath>
+     <animate id="line-1-scene-10-fade-out"
+         attributeName="opacity"
+         values="1;0"
+         keyTimes="0;1"
+         dur="1s"
+         begin="usage-appear.end+14.4s"
+         fill="freeze" />
+   </text>
+  </g>
 
 </svg>

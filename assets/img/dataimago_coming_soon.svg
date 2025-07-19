@@ -1,0 +1,112 @@
+<svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Vibrant Animated Gradient Definition -->
+    <linearGradient id="imagoGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4caf50"> <!-- Green -->
+        <animate attributeName="stop-color" values="#4caf50;#42a5f5;#e91e63;#4caf50" dur="3s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#ff9800"> <!-- Orange -->
+        <animate attributeName="stop-color" values="#ff9800;#42a5f5;#9c27b0;#ff9800" dur="3s" repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
+
+    <!-- Font Style Definition -->
+    <style>
+      .futura {
+        font-family: 'Futura';
+        font-style: italic;
+        font-weight: bold;
+        font-size: 100px;
+      }
+
+      .data-scene-12 {
+        fill: url(#imagoGradient); /* Vibrant Gradient for "data" */
+      }
+
+      .imago-scene-12 {
+        fill: url(#imagoGradient); /* Vibrant Gradient for "imago" */
+      }
+    </style>
+
+        <path id="line-1-coming-soon" d="m250,250 h300" fill="none" stroke="none" />
+  </defs>
+
+  <text x="90" y="160" class="futura data-scene-12" opacity="0">data
+    <animate id="data-scene-12-fade-in"
+          attributeName="opacity"
+          values="0;1"
+          keyTimes="0;1"
+          dur="2s"
+          begin="0s"
+          fill="freeze" />
+    <set attributeName="opacity" to="1" begin="data-scene-12-fade-in.end" />
+    <animate id="data-scene-12-move-to-center"
+          attributeName="x"
+          values="90;100.5"
+          keyTimes="0;1"
+          dur="1s"
+          begin="2s"
+          fill="freeze" />
+    <animate id="data-scene-12-fade-out"
+          attributeName="opacity"
+          values="1;0"
+          keyTimes="0;1"
+          dur="2s"
+          begin="12s"
+          fill="freeze" />
+  </text>
+
+  <text x="300" y="160" class="futura imago-scene-12" opacity="0">imago.ai
+    <animate id="imago-scene-12-fade-in"
+          attributeName="opacity"
+          values="0;1"
+          keyTimes="0;1"
+          dur="2s"
+          begin="0s"
+          fill="freeze" />
+    <set attributeName="opacity" to="1" begin="imago-scene-12-fade-in.end" />
+    <animate id="imago-scene-12-move-to-center"
+          attributeName="x"
+          values="300;289.5"
+          keyTimes="0;1"
+          dur="1s"
+          begin="2s"
+          fill="freeze" />
+    <animate id="imago-scene-12-fade-out"
+          attributeName="opacity"
+          values="1;0"
+          keyTimes="0;1"
+          dur="2s"
+          begin="12s"
+          fill="freeze" />
+  </text>
+
+  <!-- Coming Soon ... -->
+  <g id="coming-soon-quote" opacity="0">
+   <animate attributeName="opacity" to="1" begin="1s" dur="1ms" fill="freeze" />
+
+   <path>
+     <animate id="d1" attributeName="d" begin="1s"
+       dur="2.6s" fill="freeze"
+       values="m250,250 h0 ; m250,250 h0 ; m250,250 h300 ; m250,250 h300"
+       keyTimes="0;0;0.91;1"
+       href="#line-1-coming-soon" />
+   </path>
+
+   <text font-family="'Source Code Pro', monospace" fill="#000000" font-size="32"
+         dominant-baseline="hanging"
+         x="0" y="0" text-anchor="left" opacity="0">
+     <animate attributeName="opacity" to="1" begin="0s" dur="1ms" fill="freeze" />
+     <textPath href="#line-1-coming-soon">
+       Coming Soon ...
+     </textPath>
+     <animate id="line-1-scene-10-fade-out"
+         attributeName="opacity"
+         values="1;0"
+         keyTimes="0;1"
+         dur="1s"
+         begin="15s"
+         fill="freeze" />
+   </text>
+  </g>
+</svg>

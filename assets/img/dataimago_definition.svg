@@ -1,0 +1,235 @@
+<svg viewBox="0 0 800 400" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .background {
+        fill: white;
+      }
+      
+      .scene-11-word {
+        font-family: 'Futura';
+        font-style: italic;
+        font-weight: bold;
+        font-size: 48px;
+        font-weight: 400;
+        fill: #000000;
+        text-anchor: left;
+        dominant-baseline: hanging;
+      }
+      
+      .scene-11-letter {
+        font-family: 'Futura';
+        font-style: italic;
+        font-weight: bold;
+        font-size: 48px;
+        font-weight: 400;
+        fill: #FF0000;
+        text-anchor: left;
+        dominant-baseline: hanging;
+      }
+      
+      .scene-11-phonetic {
+        font-family: 'Google Sans', 'Roboto', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        fill: #5f6368;
+        text-anchor: left;
+        dominant-baseline: hanging;
+      }
+      
+      .scene-11-definition {
+        font-family: 'Google Sans', 'Roboto', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        fill: #000000;
+        text-anchor: left;
+        dominant-baseline: hanging;
+      }
+      
+      .scene-11-part-of-speech {
+        font-family: 'Google Sans', 'Roboto', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        fill: #5f6368;
+        text-anchor: left;
+        dominant-baseline: hanging;
+        font-style: italic;
+      }
+      
+      .scene-11-example {
+        font-family: 'Google Sans', 'Roboto', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        fill: #FF0000;
+        text-anchor: left;
+        dominant-baseline: hanging;
+        font-style: italic;
+      }
+
+      .scene-11-etymology {
+        font-family: 'Google Sans', 'Roboto', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        fill: #5f6368;
+        text-anchor: left;
+        dominant-baseline: hanging;
+        font-style: italic;
+      }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect class="background" width="100%" height="100%" />
+
+  <!-- Word: dataimago -->
+  <text x="90" y="50" class="scene-11-word" opacity="0">data
+    <animate id="data-appear"
+             attributeName="opacity"
+             values="0;1"
+             keyTimes="0;1"
+             dur="2s"
+             begin="0s"
+             fill="freeze" />
+    <animate id="data-move-right"
+             attributeName="x"
+             values="90;100"
+             keyTimes="0;1"
+             dur="1s"
+             begin="2s"
+             fill="freeze" />
+  </text>
+
+  <text x="210" y="50" class="scene-11-word" opacity="0">imago
+    <animate id="imago-appear"
+             attributeName="opacity"
+             values="0;1"
+             keyTimes="0;1"
+             dur="2s"
+             begin="0s"
+             fill="freeze" />
+    <animate id="imago-move-left"
+             attributeName="x"
+             values="210;190"
+             keyTimes="0;1"
+             dur="1s"
+             begin="2s"
+             fill="freeze" />
+  </text>
+
+  <!-- Letters: ai -->
+  <text x="173.7" y="50" class="scene-11-letter" opacity="0">a
+    <animate id="a-appear"
+             attributeName="opacity"
+             values="0;1"
+             keyTimes="0;1"
+             dur="1s"
+             begin="3s"
+             fill="freeze" />
+  </text>
+
+  <text x="190" y="50" class="scene-11-letter" opacity="0">i
+    <animate id="i-appear"
+             attributeName="opacity"
+             values="0;1"
+             keyTimes="0;1"
+             dur="1s"
+             begin="3s"
+             fill="freeze" />
+  </text>
+
+  <!-- Phonetic pronunciation -->
+  <text x="100" y="105" class="scene-11-phonetic" opacity="0">
+    /dādə&#8202;ˈ&#8202;mäɡō/
+    <animate id="phonetic-appear"
+             attributeName="opacity"
+             values="0;1"
+             keyTimes="0;1"
+             dur="0.8s"
+             begin="a-appear.end+0.3s"
+             fill="freeze" />
+  </text>
+
+  <!-- Part of speech -->
+  <text x="100" y="130" class="scene-11-part-of-speech" opacity="0">
+    noun
+    <animate id="pos-appear"
+             attributeName="opacity"
+             values="0;1"
+             keyTimes="0;1"
+             dur="0.6s"
+             begin="phonetic-appear.end+0.3s"
+             fill="freeze" />
+  </text>
+
+  <!-- Etymology -->
+  <text x="100" y="155" class="scene-11-etymology" opacity="0">
+    Etymology: From Latin "data" (things given) + "imago" (image, representation)
+    <animate id="etymology-appear"
+             attributeName="opacity"
+             values="0;1"
+             keyTimes="0;1"
+             dur="1s"
+             begin="phonetic-appear.end+0.8s"
+             fill="freeze" />
+  </text>
+
+  <!-- Definition 1 -->
+  <text x="100" y="200" class="scene-11-definition" opacity="0">
+  A system that fuses human meaning and machine logic to guide social transformation
+  <animate id="def1-appear"
+          attributeName="opacity"
+          values="0;1"
+          keyTimes="0;1"
+          dur="1.2s"
+          begin="etymology-appear.end+0.5s"
+          fill="freeze" />
+  </text>
+
+  <!-- Definition 2 -->
+  <text x="100" y="220" class="scene-11-definition" opacity="0">
+  using ai to reconcile interpretation and measurement in service of human flourishing &#8212; 
+  <animate id="def2-appear"
+          attributeName="opacity"
+          values="0;1"
+          keyTimes="0;1"
+          dur="1.2s"
+          begin="etymology-appear.end+0.5s"
+          fill="freeze" />
+  </text>
+
+  <!-- Definition 3 -->
+  <text x="100" y="240" class="scene-11-definition" opacity="0">
+  building systems that emancipate rather than dominate.
+  <animate id="def3-appear"
+          attributeName="opacity"
+          values="0;1"
+          keyTimes="0;1"
+          dur="1.2s"
+          begin="etymology-appear.end+0.5s"
+          fill="freeze" />
+  </text>
+
+  <!-- Legacy -->
+  <text x="100" y="280" class="scene-11-definition" opacity="0">
+  Legacy: super-alignment, human-centered ai, critical transformation
+  <animate id="legacy-appear"
+          attributeName="opacity"
+          values="0;1"
+          keyTimes="0;1"
+          dur="1s"
+          begin="def3-appear.end+0.5s"
+          fill="freeze" />
+  </text>
+
+  <!-- Usage example -->
+  <text x="100" y="310" class="scene-11-example" opacity="0">
+  "dataimago is the instantiation of critical theory in software."
+  <animate id="example-appear"
+          attributeName="opacity"
+          values="0;1"
+          keyTimes="0;1"
+          dur="1s"
+          begin="legacy-appear.end+0.4s"
+          fill="freeze" />
+  </text>
+
+</svg>

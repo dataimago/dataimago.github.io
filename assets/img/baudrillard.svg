@@ -1,0 +1,249 @@
+<svg viewBox="0 0 800 400" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .background {
+        fill: white;
+      }
+    </style>
+    
+
+    <!-- Lines for the Baudrillard quote -->
+    <path id="line-1" d="m50,25 h700" fill="none" stroke="none" />
+    <path id="line-2" d="m50,55 h700" fill="none" stroke="none" />
+    <path id="line-3" d="m50,85 h700" fill="none" stroke="none" />
+    <path id="line-4" d="m50,115 h700" fill="none" stroke="none" />
+    <path id="line-5" d="m50,145 h700" fill="none" stroke="none" />
+    <path id="line-6" d="m50,175 h700" fill="none" stroke="none" />
+    <path id="line-7" d="m50,205 h700" fill="none" stroke="none" />
+    <path id="line-8" d="m50,235 h700" fill="none" stroke="none" />
+    <path id="line-9" d="m50,265 h700" fill="none" stroke="none" />
+    <path id="line-10" d="m50,295 h700" fill="none" stroke="none" />
+    <path id="line-11" d="m50,325 h700" fill="none" stroke="none" />
+    <path id="line-12" d="m50,370 h700" fill="none" stroke="none" />
+  </defs>
+
+  <!-- Background -->
+  <rect class="background" width="100%" height="100%" />
+
+  <!-- scene 10: Baudrillard quote -->
+  <g id="baudrillard-quote" opacity="0">
+    <animate attributeName="opacity" to="1" begin="0" dur="1ms" fill="freeze" />
+
+    <!-- line 1 -->
+    <path>
+      <animate id="d1" attributeName="d" begin="0s"
+        dur="2.6s" fill="freeze"
+        values="m50,25 h0 ; m50,25 h0 ; m50,25 h700 ; m50,25 h700"
+        keyTimes="0;0;0.91;1"
+        href="#line-1" />
+    </path>
+
+    <text font-family="'Source Code Pro', monospace" fill="#000000" font-size="22"
+          dominant-baseline="hanging"
+          x="0" y="0" text-anchor="left" opacity="0">
+      <animate attributeName="opacity" to="1" begin="0s" dur="1ms" fill="freeze" />
+      <textPath href="#line-1">
+        If men create intelligent machines, or fantasize
+      </textPath>
+    </text>
+
+    <!-- line 2 -->
+    <path>
+      <animate id="d2" attributeName="d" begin="d1.end-0.3s"
+        dur="2.6s" fill="freeze"
+        values="m50,55 h0 ; m50,55 h0 ; m50,55 h700 ; m50,55 h700"
+        keyTimes="0;0.0;0.91;1"
+        href="#line-2" />
+    </path>
+
+    <text font-family="'Source Code Pro', monospace" fill="#000000" font-size="22"
+          dominant-baseline="hanging"
+          x="0" y="0" text-anchor="left" opacity="0">
+      <animate attributeName="opacity" to="1" begin="d1.end-0.3s" dur="1ms" fill="freeze" />
+      <textPath href="#line-2">
+         about them, it is either because they secretly
+      </textPath>
+    </text>
+
+    <!-- line 3 -->
+    <path>
+      <animate id="d3" attributeName="d" begin="d2.end-0.4s"
+        dur="2.6s" fill="freeze"
+        values="m50,85 h0 ; m50,85 h0 ; m50,85 h700 ; m50,85 h700"
+        keyTimes="0;0.0;0.91;1"
+        href="#line-3" />
+    </path>
+
+    <text font-family="'Source Code Pro', monospace" fill="#000000" font-size="22"
+          dominant-baseline="hanging"
+          x="0" y="0" text-anchor="left" opacity="0">
+      <animate attributeName="opacity" to="1" begin="d2.end-0.4s" dur="1ms" fill="freeze" />
+      <textPath href="#line-3">
+         despair of their own intelligence or because they
+      </textPath>
+    </text>
+    
+    <!-- line 4 -->
+    <path>
+      <animate id="d4" attributeName="d" begin="d3.end-0.3s"
+        dur="2.6s" fill="freeze"
+        values="m50,115 h0 ; m50,115 h0 ; m50,115 h700 ; m50,115 h700"
+        keyTimes="0;0.0;0.91;1"
+        href="#line-4" />
+    </path>
+
+    <text font-family="'Source Code Pro', monospace" fill="#000000" font-size="22"
+          dominant-baseline="hanging"
+          x="0" y="0" text-anchor="left" opacity="0">
+      <animate attributeName="opacity" to="1" begin="d3.end-0.3s" dur="1ms" fill="freeze" />
+      <textPath href="#line-4">
+         are in danger of succumbing to the weight of a
+      </textPath>
+    </text>
+    
+    <!-- line 5 -->
+    <path>
+      <animate id="d5" attributeName="d" begin="d4.end-0.3s"
+        dur="2.6s" fill="freeze"
+        values="m50,145 h0 ; m50,145 h0 ; m50,145 h700 ; m50,145 h700"
+        keyTimes="0;0.0;0.91;1"
+        href="#line-5" />
+    </path>
+
+    <text font-family="'Source Code Pro', monospace" fill="#000000" font-size="22"
+          dominant-baseline="hanging"
+          x="0" y="0" text-anchor="left" opacity="0">
+      <animate attributeName="opacity" to="1" begin="d4.end-0.3s" dur="1ms" fill="freeze" />
+      <textPath href="#line-5">
+         monstrous and useless intelligence which they seek
+      </textPath>
+    </text>
+    
+    <!-- line 6 -->
+    <path>
+      <animate id="d6" attributeName="d" begin="d5.end-0.3s"
+        dur="2.6s" fill="freeze"
+        values="m50,175 h0 ; m50,175 h0 ; m50,175 h700 ; m50,175 h700"
+        keyTimes="0;0.0;0.91;1"
+        href="#line-6" />
+    </path>
+
+    <text font-family="'Source Code Pro', monospace" fill="#000000" font-size="22"
+          dominant-baseline="hanging"
+          x="0" y="0" text-anchor="left" opacity="0">
+      <animate attributeName="opacity" to="1" begin="d5.end-0.3s" dur="1ms" fill="freeze" />
+      <textPath href="#line-6">
+           to exorcize by transferring it to machines, where
+      </textPath>
+    </text>
+    
+    <!-- line 7 -->
+    <path>
+      <animate id="d7" attributeName="d" begin="d6.end-0.3s"
+        dur="2.6s" fill="freeze"
+        values="m50,205 h0 ; m50,205 h0 ; m50,205 h700 ; m50,205 h700"
+        keyTimes="0;0.0;0.91;1"
+        href="#line-7" />
+    </path>
+
+    <text font-family="'Source Code Pro', monospace" fill="#000000" font-size="22"
+          dominant-baseline="hanging"
+          x="0" y="0" text-anchor="left" opacity="0">
+      <animate attributeName="opacity" to="1" begin="d6.end-0.3s" dur="1ms" fill="freeze" />
+      <textPath href="#line-7">
+          they can play with it and make fun of it. By
+      </textPath>
+    </text>
+    
+    <!-- line 8 -->
+    <path>
+      <animate id="d8" attributeName="d" begin="d7.end-0.3s"
+        dur="2.6s" fill="freeze"
+        values="m50,235 h0 ; m50,235 h0 ; m50,235 h700 ; m50,235 h700"
+        keyTimes="0;0.0;0.91;1"
+        href="#line-8" />
+    </path>
+
+    <text font-family="'Source Code Pro', monospace" fill="#000000" font-size="22"
+          dominant-baseline="hanging"
+          x="0" y="0" text-anchor="left" opacity="0">
+      <animate attributeName="opacity" to="1" begin="d7.end-0.3s" dur="1ms" fill="freeze" />
+      <textPath href="#line-8">
+          entrusting this burdensome intelligence to machines
+      </textPath>
+    </text>
+
+    <!-- line 9 -->
+    <path>
+      <animate id="d9" attributeName="d" begin="d8.end"
+        dur="2.6s" fill="freeze"
+        values="m50,265 h0 ; m50,265 h0 ; m50,265 h700 ; m50,265 h700"
+        keyTimes="0;0.0;0.91;1"
+        href="#line-9" />
+    </path>
+
+    <text font-family="'Source Code Pro', monospace" fill="#000000" font-size="22"
+          dominant-baseline="hanging"
+          x="0" y="0" text-anchor="left" opacity="0">
+      <animate attributeName="opacity" to="1" begin="d8.end" dur="1ms" fill="freeze" />
+      <textPath href="#line-9">
+          we are released from any responsibility to knowledge,
+      </textPath>
+    </text>
+
+    <!-- line 10 -->
+    <path>
+      <animate id="d10" attributeName="d" begin="d9.end-0.3s"
+        dur="2.6s" fill="freeze"
+        values="m50,295 h0 ; m50,295 h0 ; m50,295 h700 ; m50,295 h700"
+        keyTimes="0;0.0;0.91;1"
+        href="#line-10" />
+    </path>
+
+    <text font-family="'Source Code Pro', monospace" fill="#000000" font-size="22"
+          dominant-baseline="hanging"
+          x="0" y="0" text-anchor="left" opacity="0">
+      <animate attributeName="opacity" to="1" begin="d9.end-0.3s" dur="1ms" fill="freeze" />
+      <textPath href="#line-10">
+          much as entrusting power to politicians allows
+      </textPath>
+    </text>
+
+    <!-- line 11 -->
+    <path>
+      <animate id="d11" attributeName="d" begin="d10.end-0.3s"
+        dur="2.6s" fill="freeze"
+        values="m50,325 h0 ; m50,325 h0 ; m50,325 h700 ; m50,325 h700"
+        keyTimes="0;0.0;0.91;1"
+        href="#line-11" />
+    </path>
+
+    <text font-family="'Source Code Pro', monospace" fill="#000000" font-size="22"
+          dominant-baseline="hanging"
+          x="0" y="0" text-anchor="left" opacity="0">
+      <animate attributeName="opacity" to="1" begin="d10.end-0.3s" dur="1ms" fill="freeze" />
+      <textPath href="#line-11">
+            us to disdain any aspiration of our own to power.
+      </textPath>
+    </text>
+
+    <!-- line 12 -->
+    <path>
+      <animate id="d12" attributeName="d" begin="d11.end+0.4s"
+        dur="2.6s" fill="freeze"
+        values="m50,370 h0 ; m50,370 h0 ; m50,370 h700 ; m50,370 h700"
+        keyTimes="0;0.0;0.91;1"
+        href="#line-12" />
+    </path>
+
+         <text font-family="'Source Code Pro', monospace" fill="#ff0000" font-size="18"
+           dominant-baseline="hanging"
+           x="225" y="0" text-anchor="left" opacity="0">
+       <animate attributeName="opacity" to="1" begin="d11.end+0.4s" dur="1ms" fill="freeze" />
+       <textPath href="#line-12">
+           Jean Baudrillard, <tspan font-style="italic">Xerox and Infinity</tspan> (1988)
+       </textPath>
+     </text>
+  </g>
+
+</svg>

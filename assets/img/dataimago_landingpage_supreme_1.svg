@@ -44,6 +44,14 @@
         dominant-baseline: middle;
       }
 
+      .ai-super-alignment-quote-scene-1 {
+        font-family: 'Source Code Pro', monospace;
+        font-size: 25px;
+        fill: black;
+        text-anchor: left;
+        dominant-baseline: middle;
+      }
+
       .is-scene-3 {
         font-family: 'Source Code Pro', monospace;
         font-size: 25px;
@@ -84,7 +92,7 @@
         dominant-baseline: middle;
       }
 
-      .our-vision-scene-8 {
+      .our-vision-scene-9 {
         font-family: 'Source Code Pro', monospace;
         font-size: 20px;
         fill: black;
@@ -92,7 +100,7 @@
         dominant-baseline: middle;
       }
 
-      .our-vision-scene-8-lg {
+      .our-vision-scene-9-lg {
         font-family: 'Source Code Pro', monospace;
         font-size: 25px;
         fill: black;
@@ -100,7 +108,7 @@
         dominant-baseline: middle;
       }
 
-      .our-philosophy-scene-9 {
+      .our-philosophy-scene-8 {
         font-family: 'Source Code Pro', monospace;
         font-size: 20px;
         fill: black;
@@ -108,7 +116,7 @@
         dominant-baseline: middle;
       }
 
-      .our-philosophy-scene-9-lg {
+      .our-philosophy-scene-8-lg {
         font-family: 'Source Code Pro', monospace;
         font-size: 25px;
         fill: black;
@@ -240,10 +248,11 @@
     <path id="line-10" d="m50,295 h700" fill="none" stroke="none" />
     <path id="line-11" d="m50,325 h700" fill="none" stroke="none" />
     <path id="line-12" d="m50,370 h700" fill="none" stroke="none" />
+    <path id="line-1-ai-super-alignment-quote-scene-1" d="m50,300 h700" fill="none" stroke="none" />
     <path id="line-1-our-belief-scene-6-quote" d="m55,250 h690" fill="none" stroke="none" />
     <path id="line-1-our-mission-scene-7-quote" d="m70,250 h660" fill="none" stroke="none" />
-    <path id="line-1-our-vision-scene-8-quote" d="m150,250 h500" fill="none" stroke="none" />
-    <path id="line-1-our-philosophy-scene-9-quote" d="m60,250 h680" fill="none" stroke="none" />
+    <path id="line-1-our-philosophy-scene-8-quote" d="m150,250 h500" fill="none" stroke="none" />
+    <path id="line-1-our-vision-scene-9-quote" d="m60,250 h680" fill="none" stroke="none" />
     <path id="line-1-coming-soon" d="m250,250 h300" fill="none" stroke="none" />
   </defs>
 
@@ -265,14 +274,14 @@
           values="175;205"
           keyTimes="0;1"
           dur="1s"
-          begin="data-scene-1-fade-in.end+2s"
+          begin="7s"
           fill="freeze" />
     <animate id="data-scene-1-fade-out"
           attributeName="opacity"
           values="1;0"
           keyTimes="0;1"
           dur="2s"
-          begin="data-scene-1-fade-in.end+3s"
+          begin="8s"
           fill="freeze" />
   </text>
 
@@ -290,16 +299,46 @@
           values="572;542"
           keyTimes="0;1"
           dur="1s"
-          begin="4s"
+          begin="7s"
           fill="freeze" />
     <animate id="imago-scene-1-fade-out"
           attributeName="opacity"
           values="1;0"
           keyTimes="0;1"
           dur="2s"
-          begin="5s"
+          begin="8s"
           fill="freeze" />
   </text>
+
+  <g id="ai-super-alignment-quote-scene-1" opacity="0">
+   <animate attributeName="opacity" to="1" begin="4s" dur="1ms" fill="freeze" />
+
+   <path>
+     <animate id="d-ai-super-alignment-quote-scene-1" attributeName="d" begin="4s"
+       dur="2.6s" fill="freeze"
+       values="m50,300 h0 ; m50,300 h0 ; m50,300 h700 ; m50,300 h700"
+       keyTimes="0;0;0.91;1"
+       href="#line-1-ai-super-alignment-quote-scene-1" />
+   </path>
+
+   <text class="source-code-pro ai-super-alignment-quote-scene-1"
+         dominant-baseline="hanging"
+         x="0" y="0" text-anchor="left" opacity="0">
+     <animate attributeName="opacity" to="1" begin="4s" dur="1ms" fill="freeze" />
+     <textPath href="#line-1-ai-super-alignment-quote-scene-1">
+       Human emancipation through ai super-alignment
+     </textPath>
+     <animate id="line-1-ai-super-alignment-quote-scene-1-fade-out"
+         attributeName="opacity"
+         values="1;0"
+         keyTimes="0;1"
+         dur="1.5s"
+         begin="8s"
+         fill="freeze" />
+   </text>
+  </g>
+
+
 
   <!-- scene 2: a and i black -->
   <text x="320" y="200" class="futura a-scene-2" opacity="0">a
@@ -582,9 +621,9 @@
    </text>
   </g>
 
-  <!-- scene 8: Our Vision: -->
-  <text x="400" y="190" class="source-code-pro our-vision-scene-8-lg" opacity="0">Our Vision:
-    <animate id="our-mission-scene-8-fade-in-out"
+  <!-- scene 8: Our Philosophy: -->
+  <text x="400" y="190" class="source-code-pro our-philosophy-scene-8-lg" opacity="0">Our Philosophy:
+    <animate id="our-philosophy-scene-8-fade-in-out"
           attributeName="opacity"
           values="0;1;1;0"
           keyTimes="0;0.2;0.8;1"
@@ -593,25 +632,25 @@
           fill="freeze" />
   </text>
 
-  <g id="our-vision-scene-8-quote" opacity="0">
+  <g id="our-philosophy-scene-8-quote" opacity="0">
    <animate attributeName="opacity" to="1" begin="a-scene-2-fade-in.end+39.5s" dur="1ms" fill="freeze" />
 
    <path>
-     <animate id="d-our-vision-scene-8-quote" attributeName="d" begin="a-scene-2-fade-in.end+40s"
+     <animate id="d-our-philosophy-scene-8-quote" attributeName="d" begin="a-scene-2-fade-in.end+40s"
        dur="2.6s" fill="freeze"
        values="m150,250 h0 ; m150,250 h0 ; m150,250 h500 ; m150,250 h500"
        keyTimes="0;0;0.91;1"
-       href="#line-1-our-vision-scene-8-quote" />
+       href="#line-1-our-philosophy-scene-8-quote" />
    </path>
 
-   <text class="source-code-pro our-vision-scene-8"
+   <text class="source-code-pro our-philosophy-scene-8"
          dominant-baseline="hanging"
          x="0" y="0" text-anchor="left" opacity="0">
      <animate attributeName="opacity" to="1" begin="a-scene-2-fade-in.end+40s" dur="1ms" fill="freeze" />
-     <textPath href="#line-1-our-vision-scene-8-quote">
+     <textPath href="#line-1-our-philosophy-scene-8-quote">
        Super-alignment by nurture, not by nature
      </textPath>
-     <animate id="line-1-our-vision-scene-8-fade-out"
+     <animate id="line-1-our-philosophy-scene-8-fade-out"
          attributeName="opacity"
          values="1;0"
          keyTimes="0;1"
@@ -621,9 +660,9 @@
    </text>
   </g>
 
-  <!-- scene 9: Our Philosophy: -->
-  <text x="400" y="190" class="source-code-pro our-philosophy-scene-9-lg" opacity="0">Our Philosophy:
-    <animate id="our-philosophy-scene-9-fade-in-out"
+  <!-- scene 9: Our Vision: -->
+  <text x="400" y="190" class="source-code-pro our-vision-scene-9-lg" opacity="0">Our Vision:
+    <animate id="our-vision-scene-9-fade-in-out"
           attributeName="opacity"
           values="0;1;1;0"
           keyTimes="0;0.2;0.8;1"
@@ -632,25 +671,25 @@
           fill="freeze" />
   </text>
 
-  <g id="our-philosophy-scene-9-quote" opacity="0">
+  <g id="our-vision-scene-9-quote" opacity="0">
    <animate attributeName="opacity" to="1" begin="a-scene-2-fade-in.end+47.5s" dur="1ms" fill="freeze" />
 
    <path>
-     <animate id="d-our-philosophy-scene-9-quote" attributeName="d" begin="a-scene-2-fade-in.end+48s"
+     <animate id="d-our-vision-scene-9-quote" attributeName="d" begin="a-scene-2-fade-in.end+48s"
        dur="2.6s" fill="freeze"
        values="m60,250 h0 ; m60,250 h0 ; m60,250 h680 ; m60,250 h680"
        keyTimes="0;0;0.91;1"
-       href="#line-1-our-philosophy-scene-9-quote" />
+       href="#line-1-our-vision-scene-9-quote" />
    </path>
 
-   <text class="source-code-pro our-philosophy-scene-9"
+   <text class="source-code-pro our-vision-scene-9"
          dominant-baseline="hanging"
          x="0" y="0" text-anchor="left" opacity="0">
      <animate attributeName="opacity" to="1" begin="a-scene-2-fade-in.end+48s" dur="1ms" fill="freeze" />
-     <textPath href="#line-1-our-philosophy-scene-9-quote">
+     <textPath href="#line-1-our-vision-scene-9-quote">
        Super-alignment embeds ai in culture, not culture in ai
      </textPath>
-     <animate id="line-1-our-philosophy-scene-9-fade-out"
+     <animate id="line-1-our-vision-scene-9-fade-out"
          attributeName="opacity"
          values="1;0"
          keyTimes="0;1"
@@ -984,7 +1023,7 @@
              fill="freeze" />
   </text>
 
-  <text x="210" y="50" class="scene-11-word" opacity="0">imago
+  <text x="200" y="50" class="scene-11-word" opacity="0">imago
     <animate id="imago-appear"
              attributeName="opacity"
              values="0;1"
@@ -994,7 +1033,7 @@
              fill="freeze" />
     <animate id="imago-move-left"
              attributeName="x"
-             values="210;190"
+             values="200;190"
              keyTimes="0;1"
              dur="1s"
              begin="d12.end+5s"
@@ -1128,7 +1167,7 @@
     <set attributeName="opacity" to="1" begin="usage-appear.end+9s" />
     <animate id="data-scene-12-move-to-center"
           attributeName="x"
-          values="90;100.5"
+          values="90;101"
           keyTimes="0;1"
           dur="1s"
           begin="usage-appear.end+9s"
@@ -1153,7 +1192,7 @@
     <set attributeName="opacity" to="1" begin="usage-appear.end+9s" />
     <animate id="imago-scene-12-move-to-center"
           attributeName="x"
-          values="300;289.5"
+          values="300;290"
           keyTimes="0;1"
           dur="1s"
           begin="usage-appear.end+9s"

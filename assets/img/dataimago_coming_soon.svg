@@ -42,7 +42,7 @@
     <set attributeName="opacity" to="1" begin="data-scene-12-fade-in.end" />
     <animate id="data-scene-12-move-to-center"
           attributeName="x"
-          values="90;100.5"
+          values="90;101"
           keyTimes="0;1"
           dur="1s"
           begin="2s"
@@ -67,7 +67,7 @@
     <set attributeName="opacity" to="1" begin="imago-scene-12-fade-in.end" />
     <animate id="imago-scene-12-move-to-center"
           attributeName="x"
-          values="300;289.5"
+          values="300;289"
           keyTimes="0;1"
           dur="1s"
           begin="2s"
